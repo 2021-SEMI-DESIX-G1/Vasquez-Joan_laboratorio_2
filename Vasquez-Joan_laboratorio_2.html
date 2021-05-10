@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--1. Escribir en una etiqueta "p" dentro del HTML, la respuesta a la pregunta.
+¿Qué es Javascript y en qué se asemeja a Java? -->
+
+<br>
+<p>********************************************************************************************************************************************************************</p>
+<p><b>Punto 1</b></p>
+<br>
+
+<p>JavaScript es un lenguaje interpretado, esto quiere decir que se lee y se traduce a lenguaje maquina a medida que el programa se va ejecutando linea a linea</p>
+<p>Por otro lado JavaScript es un lenguaje que se ejecuta esencialmente en un navegador web, como lo es google chrome en windows o safari en mac por ejemplo.</p>
+<p>Java por otro lado es un lenguaje compilado esto quiere decir que el codigo es traducido primero a lenguaje maquina para luego ser ejecutado. Se dice que es mas veloz</p>
+<p>Cabe destacar que el codigo en JavaScript se ejecuta del lado del cliente mientras que Java se ejecuta desde un equipo local o desde el servidor.</p>
+
+<br>
+<p>********************************************************************************************************************************************************************</p>
+
+<!--2. Declarar dos variables con la palabra reservada "var", imprimir el resultado de las operaciones de "Suma", 
+"Resta", "Multiplicación" y "División" en la consola. Las variables pueden ser estáticas.-->
+
+<p><b>Punto 2</b></p>
+<br>
+
+<p> Variable 1 = 5 </p>
+<p> Variable 2 = 10</p>
+<br>
+
+<!--Sumar-->
+<p id="Suma"></p>
+
+<script>
+var variable1 = 5;
+var variable2 = 10;
+var Suma = variable2 + variable1;
+document.getElementById("Suma").innerHTML = 
+"Suma = " + Suma;
+</script>
+
+<!--Restar-->
+<p id="Resta"></p>
+
+<script>
+var variable1 = 5;
+var variable2 = 10;
+var Resta = variable2 - variable1;
+document.getElementById("Resta").innerHTML = 
+"Resta = " + Resta;
+</script>
+
+<!--Multiplicar-->
+<p id="Multiplicar"></p>
+
+<script>
+var variable1 = 5;
+var variable2 = 10;
+var Multiplicar = variable2 * variable1;
+document.getElementById("Multiplicar").innerHTML = 
+"Multiplicacion = " + Multiplicar;
+</script>
+
+<!--Dividir-->
+<p id="Division"></p>
+
+<script>
+var variable1 = 5;
+var variable2 = 10;
+var Division = variable2 / variable1;
+document.getElementById("Division").innerHTML = 
+"Division= " + Division;
+</script>
+
+<br>
+<p>********************************************************************************************************************************************************************</p>
+
+<!--3. Declarar dos variables con la palabra reservada "let", imprimir la concatenación de ellas.-->
+
+<p><b>Punto 3</b></p>
+<br>
+
+<p>Variable 1 = "Java"</p>
+<p>Variable 2 = "Script"</p>
+
+<p id="concatlet"></p>
+
+<script>
+{  
+  let variable1 = "Java";
+  let variable2 = "Script";
+  let concatlet = variable1+variable2;
+  document.getElementById("concatlet").innerHTML =
+  "Concatenacion de variable 1 y 2 = " + concatlet;
+}
+</script>
+
+<br>
+<p>********************************************************************************************************************************************************************</p>
+
+<!--4. Declarar dos variables con la palabra reservada "const", imprimir cuál es el tipo de dato de esa variable.-->
+
+<p><b>Punto 4</b></p>
+<br>
+
+<p>Variable 1 = "J@v@Scr1pt"</p>
+<p>Variable 2 = 5</p>
+
+<p id="tipodato1"></p>
+<p id="tipodato2"></p>
+
+<script>
+{  
+  const variable1 = "J@v@Scr1pt";
+  const variable2 = 5;
+  const tipodato1 = variable1;
+  document.getElementById("tipodato1").innerHTML =
+  "Tipo de dato variable 1 = " + typeof tipodato1;
+  document.getElementById("tipodato2").innerHTML =
+  "Tipo de dato variable 2 = " + typeof tipodato2;
+}
+</script>
+
+<br>
+<p>********************************************************************************************************************************************************************</p>
+
+<!--5. Declarar una variable tipo Objecto, colocar 4 llaves dentro de él que contengan un entero, 
+un string, un booleano y un objeto vacío, en ese mismo orden.-->
+
+<p><b>Punto 5</b></p>
+<br>
+
+<p>Objeto = objeto</p>
+<p>Propiedades = entero, string, booleano, vacio</p>
+<br>
+
+<p id="entero"></p>
+<p id="string"></p>
+<p id="booleano"></p>
+<p id="vacio"></p>
+
+<script>
+
+var objeto = {
+  entero: "1", 
+  string: "JavaScript", 
+  booleano: false,
+  vacio:null
+};
+
+document.getElementById("entero").innerHTML =
+"entero = " + objeto.entero;
+document.getElementById("string").innerHTML =
+"string = " + objeto.string;
+document.getElementById("booleano").innerHTML =
+"booleano = " + objeto.booleano;
+document.getElementById("vacio").innerHTML =
+"vacio = " + objeto.vacio;
+
+</script>
+
+<p>********************************************************************************************************************************************************************</p>
+
+</body>
+</html>
